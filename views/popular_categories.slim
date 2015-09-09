@@ -1,0 +1,18 @@
+table 
+  thead
+    tr Popular Categories
+    tr
+      th Categories Name
+      th no_sold
+
+  tbody
+  table
+    - @tasks.each do |cat_name, no_sold|
+        tr
+        <td>#{{cat_name}}</td>
+        <td>#{{no_sold}}</td>
+  /table
+  body
+  <form action="/" method="get">
+  <input type="submit" value="Back to home page">
+  </form>
